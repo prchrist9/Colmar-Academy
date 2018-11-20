@@ -72,6 +72,8 @@ nav li {
 	display: none;
 }
 
+
+
 /* Background */
 
 .background {
@@ -419,4 +421,48 @@ footer {
 	padding-left: 2rem;
 	font-size: 1.5rem;
 	color: lightgray;
+}
+
+/*Mobile Queries */
+
+@media only screen and (max-width: 720px) {
+	.desktop-nav-left,
+	.desktop-nav-right {
+		display: none;
+	}
+
+	.mobile-nav {
+	display: all;
+	}
+
+	.mobile-nav-header {
+		display: flex;
+		justify-content: space-around;
+		height: 4rem;
+		margin-top: 1.5rem;
+	
+	}
+
+	.mobile-nav-header img {
+		height: 50%;
+	}
+
+.background {
+	display: flex;
+	flex-direction: column;
+}
+
+.banner {
+	display: inline-flex;
+	background-image:  url("../Resources/capstone_colmar_assets/images/banner.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
+	height: 25rem;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+
+
 }
