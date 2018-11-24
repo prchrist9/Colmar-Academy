@@ -288,6 +288,10 @@ flex-direction: column;
 	margin: 0 4.5rem;
 }
 
+.curriculum-mobile {
+	display: none;
+}
+
 .curriculum img {
 	width: 100%;
 	height: auto;
@@ -331,6 +335,10 @@ flex-direction: column;
 	background-color: white;
 	display: flex;
 	border-bottom: 2px gray solid;
+}
+
+.exhibit-mobile {
+	display: none;
 }
 
 .exhibit-header {
@@ -425,7 +433,7 @@ footer {
 
 /*Mobile Queries */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 720px) and (max-height: 720px) {
 	.desktop-nav-left,
 	.desktop-nav-right {
 		display: none;
@@ -448,8 +456,8 @@ footer {
 	}
 
 .background {
-	display: flex;
-	flex-direction: column;
+	display: block;
+	height: auto;
 }
 
 .banner {
@@ -462,6 +470,146 @@ footer {
 	width: 100%;
 	z-index: 1;
 	text-align: center;
+	margin: 0 auto;
+}
+
+.background-info {
+	max-width: 100%;
+	width: auto;
+}
+.background-info h1 {
+	margin: 2rem 0 2rem 1rem;
+	font-size: 2rem;
+}
+
+.background-info h2 {
+margin: 0 0 1.5rem 1rem;
+font-size: 1.5rem;
+
+}
+
+.background-info #info-button {
+	max-width: 60%;
+	margin: 0 1rem 2rem 1rem;
+	font-size: 1rem;
+	padding: 1rem 5rem;
+
+}
+
+.information-main {
+	display: none;
+}
+
+.information .information-side {
+	max-width: 80%;
+	margin: 1rem 0 1rem 1rem;
+	text-size: 1.5rem;
+	background-color: white;
+}
+
+.information .information-side .orientation,
+.information .information-side .campus ,
+.information .information-side .guest {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+}
+
+.information .information-side img {
+	height: auto;
+	width: 100%;
+}
+
+.information .information-side .box-text h3 {
+	font-size: 1.5rem;
+	text-align: center;
+
+}
+
+.information .information-side .box-text .stuff {
+	font-size: 1rem;
+	font-weight: 300;
+	text-align: center;
+
+}
+
+.information .information-side .box-text .link {
+	font-size: 1rem;
+	font-weight: 300;
+	color: blue;
+	text-align: center;
+
+}
+
+.information .information-side .guest {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+/* Learning (Mobile) */
+
+.learning {
+	background-color: white;
+	width: 100%;
+	max-width: 100%;
+}
+
+.learning h1 {
+	font-size: 2rem;
+}
+
+.curriculum {
+	display: none;
+}
+
+.curriculum-mobile {
+	display: block;
+}
+
+.curriculum-mobile li {
+	display: block;
+	color: black;
+	background-color: lightgray;
+	padding: 1rem 0 1.5rem 1rem;
+	margin-bottom: 0.5rem;
+	font-size: 1.5rem;
+
+
+}
+
+.curriculum-mobile ul {
+	display: inline;
+	max-width: 80%;
+}
+
+/* Thesis Part */
+
+.exhibit-header {
+	font-size: 1.5rem;
+
+}
+
+.exhibit {
+	display: none;
+
+}
+
+.exhibit-mobile {
+	display: inline;
+	padding-bottom: 1.5rem;
+}
+
+.exhibit-mobile .mobile-video {
+	margin-bottom: 1.5rem;
+}
+
+/* Footer */
+
+.footer-text {
+	padding: 1rem 0 1rem 1rem;
 }
 
 
