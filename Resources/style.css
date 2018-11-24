@@ -433,7 +433,7 @@ footer {
 
 /*Mobile Queries */
 
-@media only screen and (max-width: 720px) and (max-height: 720px) {
+@media only screen and (max-width: 480px) and {
 	.desktop-nav-left,
 	.desktop-nav-right {
 		display: none;
