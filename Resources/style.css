@@ -2,7 +2,7 @@
 
 html {
 	font-family: Helvetica;
-	font-style: 16px;
+	font-size: 16px;
 }
 
 .header {
@@ -26,7 +26,6 @@ nav .desktop {
 	height: 2rem;
 	text-transform: uppercase;
 	padding-left: 1.5rem;
-	font-size: 1.5rem;
 	align-items: center;
 	padding-top: 1rem;
 }
@@ -56,7 +55,6 @@ ul {
 
 nav li {
 	display: inline-block;
-	font-size: 1.5rem;
 	margin: auto 0.5rem;
 }
 
@@ -433,7 +431,7 @@ footer {
 
 /*Mobile Queries */
 
-@media only screen and (max-width: 480px) and {
+@media only screen and (max-width: 480px) {
 	.desktop-nav-left,
 	.desktop-nav-right {
 		display: none;
